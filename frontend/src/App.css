@@ -1,0 +1,84 @@
+/* Reset básico para remover estilos padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos globais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilização do cabeçalho */
+h1 {
+    color: #fff;
+    background-color: #333; /* Ajuste para a cor desejada */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilização da tabela */
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #555; /* Ajuste para a cor desejada */
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Estilização dos botões de paginação */
+.pagination {
+    padding: 20px;
+    text-align: center;
+}
+
+.pagination button {
+    background-color: #333; /* Ajuste para a cor desejada */
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pagination button:hover,
+.pagination button:focus {
+    background-color: #555; /* Ajuste para a cor mais escura */
+}
+
+.pagination button.active {
+    background-color: #888; /* Ajuste para a cor do botão ativo */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}

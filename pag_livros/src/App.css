@@ -1,0 +1,105 @@
+:root {
+    font-family: 'New Times Roman';
+}
+
+body {
+    background-color: #111;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: #fff;
+}
+
+.App {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.App-paginacao{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.App-paginacao > div {
+    margin-bottom: 10px;
+}
+
+.App-table {
+    background-color: #e2e2e2;
+    font-size: 18px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px;
+    border-bottom: 1px solid #000;
+}
+
+th {
+    background-color: #444;
+    color: #fff;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+button {
+    border-radius: 8px;
+    padding: 0.5em 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: inherit;
+    background-color: #888;
+    color: #000;
+    transition: background-color 0.25s, border-color 0.25s, color 0.25s;
+    margin: 0 5px;
+}
+
+button:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+button:active {
+    background-color: #000;
+    color: #fff;
+}
+
+button.selected {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+button.disabled {
+    background-color: #777;
+    color: #444;
+    cursor: not-allowed;
+}
+
+button.disabled:hover {
+    background-color: #777;
+    color: #444;
+}
